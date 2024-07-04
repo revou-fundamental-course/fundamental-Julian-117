@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Message Us</a></li>
+            </hl>
+        </nav>
+    </header>
+    <main class="main-content">
+        <h1>Hi <span id="nama">User</span>, Welcome To the Website</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="image1.jpg" class="img-slideshow" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image2.jpg" class="img-slideshow" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="image3.jpg" class="img-slideshow" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+        </div>
+        <form>
+            <table>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="birthdate">Tanggal Lahir:</label>
+            <input type="date" id="birthdate" name="birthdate"><br><br>
+            <label for="gender">Jenis Kelamin:</label>
+            <input type="radio" id="male" name="gender" value="Laki-laki">
+            <label for="male">Laki-laki</label>
+            <input type="radio" id="female" name="gender" value="Perempuan">
+            <label for="female">Perempuan</label><br><br>
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+            <tr> 
+                <td rowspan="2">
+                    <botton type="bottom" onclick="validateform();">submit</botton>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
